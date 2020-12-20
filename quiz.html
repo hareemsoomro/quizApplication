@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class=" contaier-fluid header1">
+        <h2 style="margin:5px">Student Name: Hareem Soomro</h2>
+        <h2 style="margin:5px">My Quiz Application</h2>
+        <img src="./img/saylani-logo.png" width="250px" height="100px">
+    </div>
+    
+    
+
+    <!-- my code -->
+    <!-- <div class="row myDiv">
+        <div class="col-sm-3">
+            <div>
+                <img src="./img/js.png" alt="" height="150" width="150">
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge1"></div>
+                <div id="timeGauge1"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div class="col-sm-4">
+            <p>heloo</p>
+
+        </div>
+    </div> -->
+    <!-- my code end -->
+
+
+
+
+    <div id="quizPage" class="d-none"> 
+    <div class="container " id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+           <div class="row  ">  <div id="question"></div></div>
+           <div class="col"><div id="qImg"></div>
+           <div id="timer">
+            <div id="counter"></div>
+            <div id="btimeGauge"></div>
+            <div id="timeGauge"></div>
+        </div>
+        <div id="progress"></div>
+         </div>  
+           
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div></div>
+    <script src="app.js"></script>
+</body>
+</html>

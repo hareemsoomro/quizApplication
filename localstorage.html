@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .form-container {
+        width: 80%;
+        margin: auto;
+      }
+      .blue {
+        background-color: #1f7996;
+        color: white;
+      }
+      .blue:hover{
+        color: white;
+        background-color: #155d74;
+      }
+      .texttBlue {
+        color: #1f7996;
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+      .white {
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header ----------------------------------------------------------------------------------->
+    <div class="blue">
+      <nav class="navbar navbar-light mycontainer justify-content-between ">
+        <a class="navbar-brand white">Local Storage</a>
+        <form class="form-inline">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-warning" aria-current="page" href="./localstorage.html">Score Board</a>
+            </li>
+        </form>
+      </nav>
+    </div>
+    <!-- Header End ----------------------------------------------------------------------------------->
+
+    <!-- local storage work ----------------------------------------------------------------------------------->
+    <div class="form-container">
+      <h4 class="text-center texttBlue">
+        List of All Players
+      </h4>
+      
+        <button id="btn" onclick="showData()" type="submit" class="btn blue">view data</button>
+      
+      <br> <br>
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Score</th>
+              <th scope="col">Time</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+     <!-- local storage work end -------------------------------------------------------------------------------- -->
+  </body>
+  <script src="app.js"></script>
+  <script src="score.js"></script> 
+ 
+</html>
